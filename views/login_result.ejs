@@ -1,0 +1,11 @@
+<% if(loggedIn) { %>
+    <h1>You have successfully logged in</h1>
+    <% if(admin) { %>
+        <a href="/admin-route">Go to the admin route</a>
+    <% } else { %>
+        <a href='/protected-route'>Go to the protected route</a>
+    <% } %>
+<% } else { %>
+    <h1>You entered the wrong password</h1>
+    <a href="/login">Try logging in again</a>
+<% } %>

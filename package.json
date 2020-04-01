@@ -1,21 +1,29 @@
 {
-  "name": "local-strategy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.0.2",
-    "ejs-layouts": "0.0.1",
-    "express": "^4.17.1",
-    "passport-local": "^1.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  }
+    "name": "local-strategy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^4.0.1",
+        "connect-mongo": "^3.2.0",
+        "crypto": "^1.0.1",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.0.2",
+        "ejs-layouts": "0.0.1",
+        "express": "^4.17.1",
+        "express-ejs-layouts": "^2.5.0",
+        "express-session": "^1.17.0",
+        "mongoose": "^5.9.7",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
 }

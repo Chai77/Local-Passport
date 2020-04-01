@@ -1,0 +1,12 @@
+<% if(authenticated) { %>
+    <h1>You are authenticated <%= username %></h1>
+    <form action="/logout" method="post">
+        <input type="submit" value="Logout">
+    </form>
+    <% if(admin) { %>
+        <h1>You are also an admin</h1>
+    <% } %>
+<% } else { %>
+    <h1>You aren't authenticated</h1>
+    <a href='/login'>Login</a>
+<% } %>

@@ -1,0 +1,19 @@
+<h1>Login Page</h1>
+
+<% if(errorMessage !== '') { %>
+    <h4><%= errorMessage %></h4>
+<% } %>
+
+<form action="/login" method="POST">
+    <div>
+        <label for="username">Username</label
+        ><input type="text" name="username" />
+    </div>
+    <div>
+        <label for="password">Password</label
+        ><input type="password" name="password" />
+    </div>
+    <div><input type="submit" value="Submit" /></div>
+</form>
+<br>
+<a href="/register">If you don't already have an account, register here</a>
